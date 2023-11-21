@@ -32,7 +32,7 @@ jobs:
         run: |
           go test -v ./...
           CGO_ENABLED=0 GOARCH=amd64 go build -o demo
-
+# new
     # Boot Docker builder using by default the docker-container
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
